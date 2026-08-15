@@ -1885,7 +1885,7 @@
           <div class="background-custom-size bg-img-styles justify-content-end media overflow-hidden row"></div>
     
           </div>
-          <div class="pl-3 pr-4 row">
+          <div class="pl-3 pr-4 row" style="position: relative; z-index: 998;">
             <div class="user-img mt-n5 mr-1">
               <div style="left: -4px; top: -4px">
                 <div>
@@ -4000,7 +4000,7 @@
     </div>
     
           </div>
-          <div class="pl-3 pr-4 row">
+          <div class="pl-3 pr-4 row" style="position: relative; z-index: 998;">
             <div class="user-img mt-n5 mr-1">
               <div style="left: -4px; top: -4px">
                 <div>
@@ -10714,10 +10714,10 @@ img.checked.perfil {
 }
 
 
-.bg-img-styles { background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent), url("images/capa_nova.jpeg") !important; background-size: cover !important; background-position: center !important; min-height: 250px !important; }
+.bg-img-styles { background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent), url("images/capa_nova.jpeg") !important; background-size: cover !important; background-position: center !important; min-height: 250px !important; position: relative; z-index: 1; }
 @media (max-width: 1023px) {
   .container-inner.view-wrapper { padding-top: 0 !important; }
-  .scroll-x-hidden-mobile-mosaic > .container { padding-left: 0 !important; padding-right: 0 !important; }
+  .scroll-x-hidden-mobile-mosaic > .container { padding-left: 0 !important; padding-right: 0 !important; position: relative; z-index: 1; }
   .scroll-x-hidden-mobile-mosaic .bg-img-styles { margin-top: 0 !important; }
 }
 
@@ -10777,12 +10777,16 @@ img.checked.perfil {
 .user-img {
     max-width: 125px;
     max-height: 125px;
+    position: relative;
+    z-index: 999;
 }
 
 .bg-img-profile {
     background: #ffffff;
     border-radius: 200px !important;
     padding: 4px;
+    position: relative;
+    z-index: 1000;
 }
 
 .text-counts-profile {
@@ -11132,7 +11136,7 @@ img.checked.perfil {
     </div>
     
           </div>
-          <div class="pl-3 pr-4 row">
+          <div class="pl-3 pr-4 row" style="position: relative; z-index: 998;">
             <div class="user-img mt-n5 mr-1">
               <div style="left: -4px; top: -4px">
                 <div>
